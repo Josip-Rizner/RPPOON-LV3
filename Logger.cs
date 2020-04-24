@@ -9,7 +9,7 @@ namespace RPPOON_LV3
     class Logger
     {
         private static Logger instance;
-        private string LogFilePath;
+        public string LogFilePath { set; get; }
 
         private Logger()
         {
@@ -34,3 +34,7 @@ namespace RPPOON_LV3
         }
     }
 }
+
+
+
+/*Ako je datoteka postavljena na jednom mjestu u tekstu programa, onda ćemo uporabom loggera na drugim mjetima pisati u istu datoteku. (Uz pretpostavku da nije ponovno postavljena)*/
